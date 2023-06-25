@@ -3,7 +3,7 @@ import LastestPacks from "../components/LastestPacks"
 import NavScrollExample from "../components/NavScrollExample"
 import Services from "../components/Services"
 import BasicExample from "../components/Company"
-
+import Team from "../components/Team";
 
 const Home = () => {
   return (
@@ -13,6 +13,7 @@ const Home = () => {
       <Services/>
       <Progress />
       <BasicExample />
+      <Team />
     </div>
   )
 }

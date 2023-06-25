@@ -17,14 +17,14 @@ function BasicExample() {
     <Card style={{ width: '15rem' , margin:"2rem" }}>
         <img src={Internships} alt="" />
       <Card.Body>
-        <Card.Title >15</Card.Title>
+        <Card.Title className='num1'>15</Card.Title>
         <Card.Text className ='internship'>Internships</Card.Text>
       </Card.Body>
     </Card>
     <Card style={{ width: '15rem' , margin: "2rem" }}>
         <img src={Employees} alt="" />
       <Card.Body>
-        <Card.Title >15</Card.Title>
+        <Card.Title className='num2'>15</Card.Title>
         <Card.Text className ='employee'>Employees</Card.Text>
       </Card.Body>
     </Card>
@@ -32,15 +32,15 @@ function BasicExample() {
     <Card style={{ width: '15rem' , margin: "2rem" }}>
         <img src={Parteners} alt="" />
       <Card.Body>
-        <Card.Title >15</Card.Title>
+        <Card.Title className='num3'>15</Card.Title>
         <Card.Text className='partener'>Parteners</Card.Text>
       </Card.Body>
     </Card>
     <Card style={{ width: '15rem' , margin: "2rem 2rem" }}>
         <img src={Employees} alt="" />
       <Card.Body>
-        <Card.Title>15</Card.Title>
-        <Card.Text className='employee'>Employees</Card.Text>
+        <Card.Title className='num2'>15</Card.Title>
+        <Card.Text className='employee'>Tasks</Card.Text>
       </Card.Body>
     </Card>
         </Row>
