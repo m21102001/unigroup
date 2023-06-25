@@ -1,5 +1,31 @@
-.serivce{
-    background-image: url(../assets/navbar/servies.png);
-        height: 25vh;
-    width: 100%;
+.serivce {
+  /* background-image: url(../assets/navbar/servies.png); */
+  height: 25vh;
+  width: 100%;
+  background-color: black;
+  color: white;
+  align-items: center;
+}
+.whatwedo {
+  color: rgba(244, 123, 41, 1);
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 50px;
+  text-align: start;
+}
+.Wearehere {
+    color: black;
+    font-size: 20px;
+  font-weight: 700;
+  text-align: start;
+  /* padding: 1rem 0; */
+}
+.lorem {
+  text-align: start;
+}
+.btn-orange{
+    background-color: rgba(244, 123, 41, 1) !important;
+}
+.services-section {
+  padding: 2rem 0;
 }
