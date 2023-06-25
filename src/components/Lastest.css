@@ -1,0 +1,21 @@
+.LastestPicks {
+  font-family: Poppins;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0em;
+ color: rgba(0, 0, 0, 1);
+ 
+}
+.check-our {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  color: rgba(112, 117, 122, 1);
+}
+.image-depart{
+    width: -webkit-fill-available;
+    padding: 1rem 3.8rem;
+}

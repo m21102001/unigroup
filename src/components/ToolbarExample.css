@@ -1,0 +1,15 @@
+.department{
+    width: 8rem;
+   background-color: white !important;
+}
+.department :hover{
+    background-color: rgba(249, 161, 58, 1) !important ;
+}
+.buttonGroup{
+    border: 1px solid rgba(249, 161, 58, 1) !important;
+}
+
+.btn-group>.btn.active{
+    background-color: rgba(249, 161, 58, 1) !important;
+
+}

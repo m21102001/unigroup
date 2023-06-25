@@ -1,0 +1,26 @@
+.logo {
+  width: 2.5rem;
+  border-radius: 50%;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.egypt{
+    width: 1.5rem;
+  border-radius: 50%;
+  will-change: filter;
+  transition: filter 300ms;
+  margin: 0px 0 0 38px;
+}
