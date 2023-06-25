@@ -1,56 +1,48 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Employee from "../assets/navbar/Employees.png";
+import Employees from "../assets/navbar/Employees.png";
 import Internships from "../assets/navbar/Internships.png";
 import Parteners from "../assets/navbar/Parteners.png";
 import "./Company.css";
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
 
 function BasicExample() {
   return (
     <div>
-    <h2>Our Company</h2>
-    <Container>
+    <h2 className='Heading'>Our Company</h2>
+    <Container style={{marginLeft: "2rem"}}>
         <Row>
-          <Col>
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={Employee} />
+    <Card style={{ width: '15rem' , margin:"2rem" }}>
+        <img src={Internships} alt="" />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Card.Title className='num1'>15</Card.Title>
+        <Card.Text className ='internship'>Internships</Card.Text>
       </Card.Body>
     </Card>
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={Internships} />
+    <Card style={{ width: '15rem' , margin: "2rem" }}>
+        <img src={Employees} alt="" />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Card.Title className='num2'>15</Card.Title>
+        <Card.Text className ='employee'>Employees</Card.Text>
       </Card.Body>
     </Card>
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={Parteners} />
+   
+    <Card style={{ width: '15rem' , margin: "2rem" }}>
+        <img src={Parteners} alt="" />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Card.Title className='num3'>15</Card.Title>
+        <Card.Text className='partener'>Parteners</Card.Text>
       </Card.Body>
     </Card>
-    </Col>
+    <Card style={{ width: '15rem' , margin: "2rem 2rem" }}>
+        <img src={Employees} alt="" />
+      <Card.Body>
+        <Card.Title className='num2'>15</Card.Title>
+        <Card.Text className='employee'>Tasks</Card.Text>
+      </Card.Body>
+    </Card>
         </Row>
       </Container>
     </div>

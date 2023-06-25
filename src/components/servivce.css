@@ -1,6 +1,7 @@
 .serivce {
   /* background-image: url(../assets/navbar/servies.png); */
-  height: 25vh;
+  height: 20vh;
+  border-radius: 10px;
   width: 100%;
   background-color: black;
   color: white;

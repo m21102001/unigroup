@@ -9,7 +9,7 @@ import "./Progress.css";
 const Progress = () => {
   return (
     <div className='Progress'>
-    <h5>In Progress</h5>
+    <p>In Progress</p>
     <Container>
       <Row>
         <Col><img src={progress} alt="Loading" className="Progress-img" /></Col>
