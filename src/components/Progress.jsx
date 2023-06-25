@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import progress from "../assets/navbar/progress.png"
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
