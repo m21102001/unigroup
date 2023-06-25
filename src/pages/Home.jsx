@@ -1,4 +1,4 @@
-import Aboutus from "../components/Aboutus"
+import Progress from "../components/Progress"
 import LastestPacks from "../components/LastestPacks"
 import NavScrollExample from "../components/NavScrollExample"
 import Services from "../components/Services"
@@ -9,10 +9,10 @@ const Home = () => {
     <div>
       <NavScrollExample/>
       <LastestPacks/>
+      <Progress />
       <Services/>
-      <Aboutus/>
     </div>
   )
 }
 
-export default Home
+export default Home;
