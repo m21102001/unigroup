@@ -1,0 +1,10 @@
+hr{
+    width: 312px;
+    height: 4px;
+    margin: auto !important;
+    /* color: rgba(244, 123, 41, 1); */
+    background-color: rgba(244, 123, 41, 1);
+    font-weight: bold;
+    border-radius: 50px;
+
+}
