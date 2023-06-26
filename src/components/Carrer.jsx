@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -8,17 +8,49 @@ import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
 import Card from 'react-bootstrap/Card';
+import { useState } from 'react';
 
 
 
 function Carrer() {
+
+  const [jobs,setJobs] =useState(true)
+  const [activeCard ,setActiveCard] =useState(1)
   return (
-    <div>
-
-
-
     <Container>
-      <Row>
+
+<div className="choose-tour-or-flight">
+          <Button
+          className='buttonGroup'
+            onClick={() => {
+              setActiveCard(1);
+              setJobs(true);
+            }}
+            style={
+              
+              activeCard === 2
+              ? { backgroundColor: "white" ,color:"black" }
+              : { backgroundColor: "rgb(249 161 58)" }
+            }
+          >
+            <div> Jobs</div>
+          </Button>
+          <Button
+          className='buttonGroup'
+            onClick={() => {
+              setActiveCard(2);
+              setJobs(false);
+            }}
+            style={
+              activeCard === 1
+                ? { backgroundColor: "white" ,color:"black" }
+                : { backgroundColor: "rgb(249 161 58)" }
+            }
+          >
+            <div>Internship</div>
+          </Button>
+        </div>
+      {/* <Row>
         <Col><ButtonGroup className="department first-group me-5" aria-label="First group">
         <Button className='buttonGroup' variant='' active>Jobs</Button> 
       </ButtonGroup>
@@ -27,7 +59,16 @@ function Carrer() {
         <Button className='buttonGroup' variant='' >Internship</Button> 
       </ButtonGroup>
       </Col>
-      </Row>
+      </Row> */}
+      <div className='content'>
+        {jobs == true? (
+          
+            <h1>Job Openings</h1>
+            
+            ):(
+              <h1>internship</h1>
+            )}
+      </div>
       <Row>
       <Col Column1 col-3><Card style={{ width: '18rem' }}>
       <Card.Body>
@@ -88,7 +129,6 @@ function Carrer() {
       </Col>
       </Row>
     </Container>
-    </div>
   )
 }
 
