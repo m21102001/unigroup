@@ -36,7 +36,7 @@ function NavScrollExample() {
             >Services
             </NavLink>
             <NavLink 
-            to="/Aboutus"
+            to="/About"
             className="nav-item nav-link"
             >About Us
             </NavLink>
