@@ -8,15 +8,27 @@
     text-align: left;
     font-weight: 400 !important;
 }
-.card-head,.card-title{
+.head,.title{
     text-align: left;
     margin-bottom: 1rem !important;
 }
-.card-title{
+.title{
     margin-right: 1rem !important;
 }
 .vr{
     border: 2px solid #adadad !important;
     width: 100%;
     height: 100%;
+}
+.container{
+    margin: 2rem !important;
+}
+span,h4{
+    text-align: left;
+}
+.first-group{
+    margin-bottom: 2rem !important;
+}
+.carrer-internship{
+    margin-right: 2rem !important;
 }
