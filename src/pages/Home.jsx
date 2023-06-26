@@ -11,6 +11,9 @@ import Team from "../components/Team"
 import Header from "../components/Header";
 import Aboutus from "../components/Aboutus"
 import Company from "../components/Company";
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 const Home = () => {
@@ -26,7 +29,10 @@ const Home = () => {
       <Company />
       <Team/>
       <Footer/>
+<<<<<<< Updated upstream
       
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     </div>
   )
