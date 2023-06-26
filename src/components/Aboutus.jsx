@@ -7,8 +7,8 @@ const Aboutus = () => {
     <div>
         <h2 className="fw-bold">About Us</h2>
         <hr />
-        <div className="container text-center">
-        <div className="row align-items-start services-section">
+        <div className="container d-flex flex-column justify-content-center align-items-center">
+        <div className="row row-about ms-5">
           <div className="col-6">
             <p className="Wearehere">LOREM ISUMPI DOLOR SIT AMET SIT AMET</p>
             <span className="loerm pt-5 text-start">Sed ut perspiciatis unde omnis iste natus error sit of the volum
@@ -17,7 +17,7 @@ const Aboutus = () => {
               totam rem aperiam, eaque ipsa quae ab illo incdunt ut labore et dolore magna aliqua.
               totam rem aperiam, eaque ipsa quae ab illoinvento vatis quasi architecto beatae vitae dicta.</span>
             <div className="pt-4 text-start">
-              <Button variant="outlit" className="btn btn-orange">Start New Project</Button>
+              <Button variant="outlit" className="btn btn-orange btn-about">Start New Project</Button>
             </div>
           </div>
           <div className="col-6">

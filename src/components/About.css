@@ -8,3 +8,17 @@ hr{
     border-radius: 50px;
 
 }
+/* .row-about{
+    margin-left: 5rem !important;
+} */
+@media (max-width: 568px){
+    .container .row-about{
+        display: block;
+    }
+    .Wearehere,.text-start{
+        text-align: left;
+    }
+    /* .container .btn-about{
+        display: none;
+      } */
+}
