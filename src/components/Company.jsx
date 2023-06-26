@@ -12,8 +12,8 @@ function BasicExample() {
   return (
     <div>
     <h2 className='Heading'>Our Company</h2>
-    <Container style={{marginLeft: "2rem"}}>
-        <Row>
+    <Container className=' d-flex flex-column justify-content-center align-items-center'>
+    <Row  className='row row-company ms-4'>
     <Card style={{ width: '15rem' , margin:"2rem" }}>
         <img src={Internships} alt="" />
       <Card.Body>
@@ -36,7 +36,7 @@ function BasicExample() {
         <Card.Text className='partener'>Parteners</Card.Text>
       </Card.Body>
     </Card>
-    <Card style={{ width: '15rem' , margin: "2rem 2rem" }}>
+    <Card style={{ width: '15rem' , margin: "2rem" }}>
         <img src={Employees} alt="" />
       <Card.Body>
         <Card.Title className='num2'>15</Card.Title>

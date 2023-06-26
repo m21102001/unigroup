@@ -36,8 +36,8 @@ function Team() {
             <Button className='buttonGroup' variant='outline-dark'>Flutter</Button>
           </ButtonGroup>
         </ButtonToolbar>
-        <Container style={{marginLeft: "2rem"}}>
-        <Row>
+        <Container className=' d-flex flex-column justify-content-center align-items-center'>
+        <Row  className='row row-team ms-4'>
     <Card style={{ width: '15rem' , margin:"2rem" }}>
         <img src={team} alt="" />
       <Card.Body>
@@ -80,7 +80,7 @@ function Team() {
       </Card.Body>
     </Card>
     </Row>
-    <Row>
+    <Row  className='row row-team ms-4'>
     <Card style={{ width: '15rem' , margin: "2rem 2rem" }}>
         <img src={team} alt="" />
       <Card.Body>

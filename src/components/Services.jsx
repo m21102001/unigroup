@@ -6,7 +6,7 @@ const Services = () => {
     <div className="p-3">
       <h2 className="serivce pt-5">serivce</h2>
       <div className="container text-center">
-        <div className="row align-items-start services-section">
+        <div className="row row-services align-items-start services-section">
           <div className="col-6">
             <h3 className="whatwedo text-start">WHAT WE DO</h3>
             <p className="Wearehere">We are here to help you develop yourself</p>
@@ -16,7 +16,7 @@ const Services = () => {
               totam rem aperiam, eaque ipsa quae ab illo incdunt ut labore et dolore magna aliqua.
               totam rem aperiam, eaque ipsa quae ab illoinvento vatis quasi architecto beatae vitae dicta.</span>
             <div className="pt-4 text-start">
-              <Button variant="outlit" className="btn btn-orange">Start New Project</Button>
+              <Button variant="outlit" className="btn btn-orange btn-services">Start New Project</Button>
             </div>
           </div>
           <div className="col-6">

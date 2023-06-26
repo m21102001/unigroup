@@ -11,7 +11,7 @@ const Progress = () => {
     <div className='Progress'>
     <p className="heading-progress">In Progress</p>
     <Container>
-      <Row>
+      <Row className="row row-progress">
         <Col><img src={progress} alt="Loading" className="Progress-img" /></Col>
       </Row>
     </Container>

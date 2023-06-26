@@ -62,14 +62,9 @@ function Carrer() {
       </Row> */}
       <div className='content'>
         {jobs == true? (
-          
+            <div>
             <h1>Job Openings</h1>
-            
-            ):(
-              <h1>internship</h1>
-            )}
-      </div>
-      <Row>
+            <Row>
       <Col Column1 col-3><Card style={{ width: '18rem' }}>
       <Card.Body>
         <Card.Title>Web Developer</Card.Title>
@@ -132,6 +127,14 @@ function Carrer() {
             <div className='skill-des'><h4>Skill Required:</h4><span>Adobe Photoshop, Illustrator, sketch, Typography</span></div>
       </Col>
       </Row>
+            </div>
+            ):(
+              <div>
+              <h1>internship</h1>
+              </div>
+            )}
+      </div>
+     
     </Container>
   )
 }
