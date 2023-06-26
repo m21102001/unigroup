@@ -4,6 +4,9 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Button, ButtonGroup } from "react-bootstrap"
 import "./Carrer.css"
+import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import MenuBookIcon from '@mui/icons-material/MenuBook';
 import Card from 'react-bootstrap/Card';
 
 
@@ -26,20 +29,30 @@ function Carrer() {
       </Col>
       </Row>
       <Row>
-      <Col aria-colspan={3}><Card style={{ width: '18rem' }}>
+      <Col Column1 col-3><Card style={{ width: '18rem' }}>
       <Card.Body>
         <Card.Title>Web Developer</Card.Title>
-        <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+        <Card.Subtitle className="mb-2 text-muted">
+            <LocationOnIcon /><p className=''>in Office</p>
+            <BusinessCenterIcon /><p className=''>Full-time</p>
+            <MenuBookIcon /><p className=''>Design</p>
+        </Card.Subtitle>
         <Card.Text className='text'>CSS,  HTML, JS, Photoshop, Woo-Commerce, WordPres</Card.Text>
         <ButtonGroup className="department me-5" aria-label="First group">
         <Button className='buttonGroup' variant='' active>More Details</Button> 
       </ButtonGroup>
       </Card.Body>
     </Card></Col>
-      <Col aria-colspan={3}><Card style={{ width: '18rem'  }}>
+      <Col className='Column2 col-3'><Card style={{ width: '18rem'  } }>
       <Card.Body>
         <Card.Title>UI/UX Designer</Card.Title>
-        <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
+        <Card.Subtitle className="mb-2 text-muted">
+            
+            <LocationOnIcon /><p className=''>in Office</p>
+            <BusinessCenterIcon /><p className=''>Full-time</p>
+            <MenuBookIcon /><p className=''>Design</p>
+            
+        </Card.Subtitle>
         <Card.Text className='text'>CSS,  HTML, JS, Photoshop, Woo-Commerce, WordPres</Card.Text>
         <ButtonGroup className="department me-5" aria-label="First group">
         <Button className='buttonGroup' variant='' active>More Details</Button> 
@@ -47,9 +60,9 @@ function Carrer() {
       </Card.Body>
     </Card></Col>
     <Col>
-    <div className='vr'></div>
+    <div className='vr col-1'></div>
     </Col>
-      <Col aria-colspan={6} className='carrer-internship'>
+      <Col className='carrer-internship col-4'>
         <h1 className='head'>UI/UX Designer</h1>
         <h2 className='title'>Requirments</h2>
         
@@ -73,7 +86,6 @@ function Carrer() {
             <h4>Job Location:</h4><span>lorem ipsum</span>
             <h4>Skill Required:</h4><span>Adobe Photoshop, Illustrator, sketch, Typography</span>
       </Col>
-
       </Row>
     </Container>
     </div>

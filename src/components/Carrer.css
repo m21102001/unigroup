@@ -1,6 +1,5 @@
 .buttonGroup{
     border-radius: 24px !important;
-    
 }
 .description{
     font-family: poppins;
@@ -21,7 +20,7 @@
     height: 100%;
 }
 .container{
-    margin: 2rem !important;
+    margin: 2rem 0!important;
 }
 span,h4{
     text-align: left;
@@ -31,4 +30,8 @@ span,h4{
 }
 .carrer-internship{
     margin-right: 2rem !important;
+}
+.text-muted{
+    display: flex !important;
+    
 }
