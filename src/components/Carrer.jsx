@@ -9,6 +9,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
 import Card from 'react-bootstrap/Card';
 import { useState } from 'react';
+import Signup from './signup/Signup';
 
 
 
@@ -18,7 +19,6 @@ function Carrer() {
   const [activeCard ,setActiveCard] =useState(1)
   return (
     <Container>
-
 <div className="choose-tour-or-flight">
           <Button
           className='buttonGroup'
@@ -66,7 +66,11 @@ function Carrer() {
             <h1>Job Openings</h1>
             
             ):(
-              <h1>internship</h1>
+              <div>
+                <h1>internship</h1>
+                <Signup/>
+              </div>
+              
             )}
       </div>
       <Row>
