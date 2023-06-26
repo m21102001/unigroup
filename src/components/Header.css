@@ -1,6 +1,31 @@
-.bg-img{
+.bg-img {
     background: url("../assets/navbar/Background_img.png");
     height: 100vh;
     width: 100%;
     background-size: cover;
+}
+
+.btn-contactus {
+    padding: 10px 20px;
+    border-radius: 40px;
+    outline: none;
+    border: none;
+    background-color: #F47B29;
+    color: white;
+}
+
+.link-text {
+    color: white !important;
+}
+
+.heading-h {
+    text-align: left;
+    margin: 40px;
+    position: relative;
+    top: 150px;
+    color: white;
+}
+
+.heading-h h1 {
+    margin-bottom: 1rem !important;
 }
