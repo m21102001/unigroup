@@ -5,15 +5,12 @@ import "./Header.css";
 
 
 function Header() {
-  return (
-    <div>
-        <NavScrollExample />
+    return (
         <div className='bg-img'>
-            <img src="" alt="" />
-        </div>
+            <NavScrollExample/>
 
-    </div>
-  )
+        </div>
+    )
 }
 
 export default Header;

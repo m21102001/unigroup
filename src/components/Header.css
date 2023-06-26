@@ -1,6 +1,15 @@
-.bg-img{
+.bg-img {
     background: url("../assets/navbar/Background_img.png");
     height: 100vh;
     width: 100%;
     background-size: cover;
+}
+
+.btn-contactus {
+    background-color: #f9a13a;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 40px;
+    outline: none;
+    border: none;
 }
