@@ -8,7 +8,6 @@ import Team from "../components/Team"
 import Header from "../components/Header";
 import Aboutus from "../components/Aboutus"
 import Company from "../components/Company";
-import Carrers from "./Careers"
 
 const Home = () => {
   return (
@@ -22,7 +21,6 @@ const Home = () => {
       <Company />
       <Team/>
       <Footer/>
-      <Carrers />
     </div>
   )
 }

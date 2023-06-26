@@ -1,7 +1,11 @@
+import NavScrollExample from "../components/NavScrollExample"
 
 const Portfolio = () => {
   return (
-    <div>Portfolio</div>
+    <>
+    <NavScrollExample/>
+      Portfolio
+    </>
   )
 }
 
