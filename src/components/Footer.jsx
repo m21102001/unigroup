@@ -5,9 +5,9 @@ import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import EmailIcon from '@mui/icons-material/Email';
 const Footer = () => {
   return (
-    <div>
+    <div  className="footer">
 
-<div className="container footer ">
+<div className="container">
   <footer className="pt-5">
     <div className="row">
     <div className="col mb-3">
