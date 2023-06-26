@@ -74,13 +74,15 @@ function Carrer() {
       <Card.Body>
         <Card.Title>Web Developer</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">
-            <LocationOnIcon /><p className=''>in Office</p>
-            <BusinessCenterIcon /><p className=''>Full-time</p>
-            <MenuBookIcon /><p className=''>Design</p>
+
+            <div className='icons'><LocationOnIcon /><p className=''>Office</p></div>
+            <div className='icons'><BusinessCenterIcon /><p className=''>Fulltime</p></div>
+            <div className='icons'><MenuBookIcon /><p className=''>Design</p></div>
+        
         </Card.Subtitle>
-        <Card.Text className='text'>CSS,  HTML, JS, Photoshop, Woo-Commerce, WordPres</Card.Text>
-        <ButtonGroup className="department me-5" aria-label="First group">
-        <Button className='buttonGroup' variant='' active>More Details</Button> 
+        <Card.Text className='text text-des'>CSS,  HTML, JS, Photoshop, Woo-Commerce, WordPres</Card.Text>
+        <ButtonGroup className="department me-2" aria-label="First group">
+        <Button className='buttonGroup ' variant='' active>More Details</Button> 
       </ButtonGroup>
       </Card.Body>
     </Card></Col>
@@ -89,13 +91,13 @@ function Carrer() {
         <Card.Title>UI/UX Designer</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">
             
-            <LocationOnIcon /><p className=''>in Office</p>
-            <BusinessCenterIcon /><p className=''>Full-time</p>
-            <MenuBookIcon /><p className=''>Design</p>
+            <div className='icons'><LocationOnIcon /><p className=''>Office</p></div>
+            <div className='icons'><BusinessCenterIcon /><p className=''>Fulltime</p></div>
+            <div className='icons'><MenuBookIcon /><p className=''>Design</p></div>
             
         </Card.Subtitle>
-        <Card.Text className='text'>CSS,  HTML, JS, Photoshop, Woo-Commerce, WordPres</Card.Text>
-        <ButtonGroup className="department me-5" aria-label="First group">
+        <Card.Text className='text text-des'>CSS,  HTML, JS, Photoshop, Woo-Commerce, WordPres</Card.Text>
+        <ButtonGroup className="department me-2" aria-label="First group">
         <Button className='buttonGroup' variant='' active>More Details</Button> 
       </ButtonGroup>
       </Card.Body>
@@ -103,7 +105,7 @@ function Carrer() {
     <Col>
     <div className='vr col-1'></div>
     </Col>
-      <Col className='carrer-internship col-4'>
+      <Col className='carrer-internship col-5'>
         <h1 className='head'>UI/UX Designer</h1>
         <h2 className='title'>Requirments</h2>
         
@@ -116,16 +118,18 @@ function Carrer() {
 
         <h2 className='title'>Requirments</h2>
         
+        <ul className='links-des'>
         <li className='description'>Lorem ipsum dolor sit amet, consectetur</li> 
         <li className='description'>adipiscing elit, sed do eiusmod tempor </li> 
         <li className='description'>incididunt ut labore et dolore magna</li>
         <li className='description'>quis nostrud exercitation ullamco laboris</li>
         <li className='description'>ex ea commodo consequat. Duis aute</li>
         <li className='description'>in reprehenderit in voluptate velit esse</li>
+        </ul>
         
-            <h4>Job title:</h4><span>lorem ipsum</span>
-            <h4>Job Location:</h4><span>lorem ipsum</span>
-            <h4>Skill Required:</h4><span>Adobe Photoshop, Illustrator, sketch, Typography</span>
+            <div className='skill-des'><h4>Job title:</h4><span>lorem ipsum</span></div>
+            <div className='skill-des'><h4>Job Location:</h4><span>lorem ipsum</span></div>
+            <div className='skill-des'><h4>Skill Required:</h4><span>Adobe Photoshop, Illustrator, sketch, Typography</span></div>
       </Col>
       </Row>
     </Container>
