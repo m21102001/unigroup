@@ -9,7 +9,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
 import Card from 'react-bootstrap/Card';
 import { useState } from 'react';
-import Signup from './signup/Signup';
+// import Signup from './signup/Signup';
 
 
 
