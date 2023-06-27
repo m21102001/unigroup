@@ -3,6 +3,7 @@ import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import ButtonToolbar from 'react-bootstrap/ButtonToolbar';
 import "./ToolbarExample.css"
 function ToolbarBasicExample() {
+  
   return (
     <ButtonToolbar className='contant-center justify-content-center' aria-label="Toolbar with button groups">
       <ButtonGroup className="department me-5" aria-label="First group">

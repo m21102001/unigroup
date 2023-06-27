@@ -8,20 +8,22 @@ import './App.css'
 import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
 import Serveies from "./pages/Serveies";
-import Aboutus from "./pages/Aboutus";
+import About from "./pages/About";
 import Careers from "./pages/Careers";
+import { useState } from "react";
+import CircularIndeterminate from "./components/loader/CircularIndeterminate";
 
 function App() {
   // const [count, setCount] = useState(0)
-
+  const [loading ,setLoading] = useState(false)
   return (
     <div className="App">
       
-      {/* {loading ? ( */}
-        {/* // <div> */}
-          {/* <span className="loader"></span> */}
-        {/* </div> */}
-      {/* // ) : ( */}
+      {loading?(
+        <div>
+        <CircularIndeterminate/>
+      </div>
+      ):(
         <Routes>
           <Route
             path="/"
@@ -29,11 +31,11 @@ function App() {
           />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/Services" element={<Serveies />} />
-          <Route path="/about-us" element={<Aboutus />} />
+          <Route path="/about" element={<About />} />
           <Route path="/Careers" element={<Careers />} />
         </Routes>
-      {/* )} */}
-    </div>
+      )}
+      </div>
   )
 }
 

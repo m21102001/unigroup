@@ -1,6 +1,7 @@
 .serivce {
   /* background-image: url(../assets/navbar/servies.png); */
-  height: 25vh;
+  height: 20vh;
+  border-radius: 10px;
   width: 100%;
   background-color: black;
   color: white;
@@ -12,6 +13,7 @@
   font-weight: 700;
   line-height: 50px;
   text-align: start;
+  width: 100%;
 }
 .Wearehere {
     color: black;
@@ -28,4 +30,20 @@
 }
 .services-section {
   padding: 2rem 0;
+}
+/* .row-services{
+  margin-left: 5rem !important;
+} */
+@media (max-width: 568px){
+  .container .row-services{
+      display: block;
+  }
+  /* .container .btn-services{
+    display: none;
+  } */
+  .whatwedo,.Wearehere,.lorem{
+    text-align: left;
+ }.serivce{
+    width:100%;
+ }
 }
