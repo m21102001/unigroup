@@ -7,7 +7,7 @@ const Aboutus = () => {
     <div>
         <h2 className="fw-bold">About Us</h2>
         <hr />
-        <div className="container d-flex flex-column justify-content-center align-items-center">
+        <div className="container pt-5 d-flex flex-column justify-content-center align-items-center text-start">
         <div className="row row-about ms-5">
           <div className="col-6">
             <p className="Wearehere">LOREM ISUMPI DOLOR SIT AMET SIT AMET</p>

@@ -5,7 +5,7 @@ const Services = () => {
   return (
     <div className="p-3">
       <h2 className="serivce pt-5">serivce</h2>
-      <div className="container text-center">
+      <div className="container ps-5 text-start">
         <div className="row row-services align-items-start services-section">
           <div className="col-6">
             <h3 className="whatwedo text-start">WHAT WE DO</h3>
