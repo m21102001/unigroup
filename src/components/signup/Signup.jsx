@@ -1,18 +1,16 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-// import emailIcon from "../assests/email.png";
-// import avatarIcon from "../assests/avatar.png";
-// import locationIcon from "../assests/location.png";
-// import lockIcon from "../assests/padlock.png";
-import AbcIcon from '@mui/icons-material/Abc';
-import EmailIcon from '@mui/icons-material/Email';
-import LockIcon from '@mui/icons-material/Lock';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
+import { Button } from "react-bootstrap";
+// import { Link } from "react-router-dom";
+
+// import AbcIcon from '@mui/icons-material/Abc';
+// import EmailIcon from '@mui/icons-material/Email';
+// import LockIcon from '@mui/icons-material/Lock';
+// import LocationOnIcon from '@mui/icons-material/LocationOn';
 // import "./Form.css";
 
 const Signup = () => {
 
-  const intialValues = { username: "", email: "", password: "", location: "" };
+  const intialValues = { fullname: "", email: "", birthday:"", address: "", textarea: "", chossefile: "", gender: "", educationlevel: "", whichGrade: "" };
   const [formValues, setFormValues] = useState(intialValues);
   const [formErrors, setFormErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -39,17 +37,18 @@ const Signup = () => {
     let errors = {};
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
 
+    // if (!values.fullname) {
+    //   errors.fullname = "Cannot be blank";
+    // } else{
+    //   errors.fullname = "Invalid email format";
+    // }
+
     if (!values.email) {
       errors.email = "Cannot be blank";
     } else if (!regex.test(values.email)) {
       errors.email = "Invalid email format";
     }
 
-    if (!values.password) {
-      errors.password = "Cannot be blank";
-    } else if (values.password.length < 8) {
-      errors.password = "must be more than 8 ";
-    }
 
     return errors;
   };
@@ -69,25 +68,29 @@ const Signup = () => {
 
         {/* <form onSubmit={submitHandler}> */}
         <form onSubmit={handleSubmit} noValidate>
-          {/* <h2>Sign up</h2> */}
-          <div className="input-icons-div  ">
-            <img src={<AbcIcon/>} />
+          <h2>Sign up</h2>
+          <div className="input-icons-div mb-3 ">
             <input
               type="text"
-              name="username"
-              id="username"
-              value={formValues.username}
+              name="fullname"
+              className="form-control"
+              id="fullname"
+              value={formValues.fullname}
               onChange={handleChange}
-              required
               // onChange={(e) => setUsername(e.target.value)}
               placeholder="Fullname"
+              required
+              pattern="^[A-Za-z]{3,16}$"
+              // {formErrors.fullname && (
+              //   <span className="error">{formErrors.fullname}</span>
+              // )}
             />
           </div>
-          <div className="input-icons-div  ">
-            <img src={<EmailIcon/>} />
+          <div className="input-icons-div form-floating mb-3 ">
             <input
               type="email"
               name="email"
+              className="form-control"
               id="email"
               value={formValues.email}
               onChange={handleChange}
@@ -101,51 +104,110 @@ const Signup = () => {
               <span className="error">{formErrors.email}</span>
             )}
           </div>
-          <div className="input-icons-div  ">
-            <img src={<LockIcon/>} />
+          <div className="input-icons-div mb-3 ">
             <input
-              type="password"
-              name="password"
-              id="password"
-              value={formValues.password}
+              type="date"
+              name="birthday"
+              className="form-control"
+              id="birthday"
+              value={formValues.birthday}
               onChange={handleChange}
-              className={formErrors.password && "input-error"}
-              // type="password"
+              // onChange={(e) => setaddress(e.target.value)}
+              placeholder="Birthday"
               required
-              // onChange={(e) => setPassword(e.target.value)}
-              placeholder="Password"
             />
-            {formErrors.password && (
-              <span className="error">{formErrors.password}</span>
-            )}
           </div>
-          <div className="input-icons-div  ">
-            <img src={<LocationOnIcon/>} />
+          <div className="input-icons-div mb-3 ">
             <input
               type="text"
-              name="location"
-              id="location"
-              value={formValues.location}
+              name="address"
+              className="form-control"
+              id="address"
+              value={formValues.address}
               onChange={handleChange}
-              // onChange={(e) => setLocation(e.target.value)}
-              placeholder="Location"
+              // onChange={(e) => setaddress(e.target.value)}
+              placeholder="address"
             />
+          </div>
+          <div className="mb-3">
+            <textarea
+              type="text"
+              name="textarea"
+              id="textarea"
+              className="form-control"
+              rows="3"
+              value={formValues.textarea}
+              onChange={handleChange}
+              placeholder="Additional info"
+            ></textarea>
+          </div>
+          <div className="mb-3">
+            <input
+              name="chossefile"
+              className="form-control"
+              type="file"
+              id="chossefile"
+              value={formValues.chossefile}
+              onChange={handleChange}
+            // accept=".jpg,.jpeg, .png"
+            />
+          </div>
+          <div className="input-group mb-3">
+            <select
+              name="gender"
+              className="form-select"
+              id="gender"
+              value={formValues.gender}
+              onChange={handleChange}
+            >
+              <option selected>Gender...</option>
+              <option value="1">Mail</option>
+              <option value="2">Femail</option>
+            </select>
+          </div>
+          <div className="input-group mb-3">
+            <select
+              name="educationlevel"
+              className="form-select"
+              id="educationlevel"
+              value={formValues.educationlevel}
+              onChange={handleChange}
+            >
+              <option selected>Education Level...</option>
+              <option value="1">Current Education</option>
+              <option value="2">graduation</option>
+            </select>
+          </div>
+          <div className="input-group mb-3">
+            <select
+              name="whichGrade"
+              className="form-select"
+              id="whichGrade"
+              value={formValues.whichGrade}
+              onChange={handleChange}
+            >
+              <option selected>Which Grade...</option>
+              <option value="1">Under graduation</option>
+              <option value="2">graduation</option>
+            </select>
+          </div>
 
-          </div>
-          <div className="form-checkbox-div ">
-            <input type="checkbox" required />
-            <p>
-              I agree with <span>Terms</span> and
-              <span>Privacy</span>
-            </p>
-          </div>
-          <button type="submit">Submit</button>
-          <p>
-            Do you have an account already ?
-            <span>
-              <Link to={"/login"}> Login</Link>
-            </span>
-          </p>
+          {/* <button type="submit">Submit</button> */}
+          <Button
+          type="submit"
+                className='buttonGroup mt-4'
+                onClick={() => { }}
+                style={
+                  {
+                    paddingTop:'.2rem',
+                    backgroundColor: "rgb(249 161 58)",
+                    width: "20%"
+                  }
+                }
+              >
+                submit
+              </Button>
+
         </form>
       </div>
     </div>

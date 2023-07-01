@@ -1,10 +1,10 @@
 import Container from 'react-bootstrap/Container';
 import { Button } from "react-bootstrap"
 import { useState } from 'react';
-import Signup from './signup/Signup';
 import "./Carrer.css"
 import RecipeReviewCard from './career/RecipeReviewCard';
 import InputWithIcon from './signup/InputWidthIcon';
+import Signup from './signup/Signup';
 // import { Grid } from '@mui/material';
 
 
@@ -111,8 +111,8 @@ function Carrer() {
                   <RecipeReviewCard />
                 </div>
                 <div className="col-md-6 text-bg-light">
-                  {/* <Signup /> */}
-                  <InputWithIcon/>
+                  <Signup />
+                  {/* <InputWithIcon/> */}
                 </div>
               </div>
             </div>
