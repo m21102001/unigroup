@@ -38,7 +38,6 @@ function Carrer() {
               : { backgroundColor: "rgb(249 161 58)" }
           }
         >
-          <div> Jobs</div>
           <div className='px-2'> Jobs</div>
         </Button>
         <Button
