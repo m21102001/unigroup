@@ -3,11 +3,12 @@ import Footer from '../components/Footer'
 
 const About = () => {
     return (
-        <div>
-            <NavScrollExample/>
-            About
+        <>
+            <div className='bg-careers' style={{height: '30vh'}}>
+                <NavScrollExample/>
+            </div>
             <Footer/>
-        </div>
+        </>
     )
 }
 
