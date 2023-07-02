@@ -1,6 +1,6 @@
 .Progress-img{
-    width: -webkit-fill-available;
-    padding: 1rem 3.8rem;
+    width: 100%;
+    padding: 1rem 0rem;
     
 }
 .heading-progress{
@@ -10,11 +10,17 @@
     line-height: 24px;
     letter-spacing: 0em;
     font-size: 32px;
+    padding-bottom: 16px;
 }
 .Progress{
     margin-top: 24px;
     
 }
+/* .progress-square{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
 /* .row-progress{
     margin-left: 5rem !important;
 } */
