@@ -7,9 +7,9 @@ const Aboutus = () => {
     <div>
         <h2 className="fw-bold">About Us</h2>
         <hr />
-        <div className="container d-flex flex-column justify-content-center align-items-center">
+        <div className="container d-flex flex-column pt-5 text-start justify-content-center align-items-center">
         <div className="row row-about ms-5">
-          <div className="col-6">
+          <div className="col-md-6">
             <p className="Wearehere">LOREM ISUMPI DOLOR SIT AMET SIT AMET</p>
             <span className="loerm pt-5 text-start">Sed ut perspiciatis unde omnis iste natus error sit of the volum
               accusantium loLorem ipsum dolor sit amet, consectetur adcing elit,
@@ -20,7 +20,7 @@ const Aboutus = () => {
               <Button variant="outlit" className="btn btn-orange btn-about">Start New Project</Button>
             </div>
           </div>
-          <div className="col-6">
+          <div className="col-md-6">
             <div className="row">
               <img src={about} alt="servicestools" />
                 {/* <div>{Scaling}</div> */}
