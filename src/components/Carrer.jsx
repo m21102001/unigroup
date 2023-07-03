@@ -1,6 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import { Button } from "react-bootstrap"
 import { useState } from 'react';
+// import Signup from './signup/Signup';
 import "./Carrer.css"
 import RecipeReviewCard from './career/RecipeReviewCard';
 import InputWithIcon from './signup/InputWidthIcon';

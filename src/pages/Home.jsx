@@ -9,18 +9,20 @@ import Header from "../components/Header";
 import Aboutus from "../components/Aboutus";
 import Company from "../components/Company";
 
+
+
 const Home = () => {
   return (
     <div>
       <Header />
       {/* <NavScrollExample/> */}
-      <LastestPacks/>
-      <Services/>
+      <LastestPacks />
+      <Services />
       <Progress />
       <Aboutus />
       <Company />
-      <Team/>
-      <Footer/>
+      <Team />
+      <Footer />
     </div>
   )
 }

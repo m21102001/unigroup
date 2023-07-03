@@ -3,7 +3,6 @@ import Footer from "../components/Footer"
 import NavScrollExample from "../components/NavScrollExample"
 import {useState} from "react";
 
-
 const Careers = () => {
     const [isShowMore, setIsShowMore] = useState(false);
 

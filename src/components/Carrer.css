@@ -27,7 +27,6 @@
 .title {
   /* margin-right: 1rem !important; */
 }
-
 .vr {
   /* border: 2px solid #adadad !important; */
   width: 100%;
@@ -44,6 +43,11 @@ span {
 
 .carrer-internship {
   /* margin-right: 2rem !important; */
+}
+
+
+span, h4 {
+    text-align: left;
 }
 
 .text-muted {
