@@ -79,11 +79,16 @@ import PropTypes from 'prop-types';
 import CircularProgress from '@mui/material/CircularProgress';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import Card from 'react-bootstrap/Card';
+import Container from 'react-bootstrap/Container';
+
+
 
 function CircularProgressWithLabel(props) {
   return (
     <Box sx={{ position: 'relative', display: 'inline-flex' }}>
-      <CircularProgress variant="determinate" {...props} />
+      <CircularProgress style={{color:"green" , height:"8rem" ,width:"8rem"}}
+       variant="determinate" {...props} />
       <Box
         sx={{
           top: 0,
@@ -96,7 +101,8 @@ function CircularProgressWithLabel(props) {
           justifyContent: 'center',
         }}
       >
-        <Typography variant="caption" component="div" color="text.secondary">
+        <Typography style={{color:"white"}}
+        variant="caption" component="div" color="text.secondary">
           {`${Math.round(props.value)}%`}
         </Typography>
       </Box>
@@ -114,18 +120,85 @@ CircularProgressWithLabel.propTypes = {
 };
 
 export default function CircularStatic() {
-  const [progress, setProgress] = React.useState(10);
+  const [progress1, setProgress1] = React.useState(0);
 
   React.useEffect(() => {
     const timer = setInterval(() => {
-      setProgress((prevProgress) => (prevProgress >= 100 ? 0 : prevProgress + 10));
-    }, 500);
+      setProgress1((prevProgress) => (prevProgress >= 25 ? 0 : prevProgress + 1));
+    }, 100);
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
+  const [progress2, setProgress2] = React.useState(0);
+
+  React.useEffect(() => {
+    const timer = setInterval(() => {
+      setProgress2((prevProgress) => (prevProgress >= 50 ? 0 : prevProgress + 1));
+    }, 100);
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
+  const [progress3, setProgress3] = React.useState(0);
+
+  React.useEffect(() => {
+    const timer = setInterval(() => {
+      setProgress3((prevProgress) => (prevProgress >= 75 ? 0 : prevProgress + 1));
+    }, 100);
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
+  const [progress4, setProgress4] = React.useState(0);
+
+  React.useEffect(() => {
+    const timer = setInterval(() => {
+      setProgress4((prevProgress) => (prevProgress >= 100 ? 0 : prevProgress + 1));
+    }, 100);
     return () => {
       clearInterval(timer);
     };
   }, []);
 
   return ( 
-  <CircularProgressWithLabel value={progress} />
+    <Container className='d-flex flex-row justify-content-center align-items-center'>
+    <Card className='d-flex flex-row justify-content-center align-items-center'
+     style={{ width: '15rem', backgroundColor:'black', opacity: "0.8",height: "15rem"  , margin: "2rem" }}>
+      <Card.Body >
+        <Card.Title></Card.Title>
+        <Card.Text>
+      <CircularProgressWithLabel value={progress1} />
+        </Card.Text>
+      </Card.Body>
+    </Card>
+    <Card className='d-flex flex-row justify-content-center align-items-center'
+     style={{ width: '15rem' , backgroundColor:'black', opacity: "0.8" , height: "15rem" , margin: "2rem" }}>
+      <Card.Body>
+        <Card.Title></Card.Title>
+        <Card.Text>
+      <CircularProgressWithLabel value={progress2} />
+        </Card.Text>
+      </Card.Body>
+    </Card>
+    <Card className='d-flex flex-row justify-content-center align-items-center'
+     style={{ width: '15rem' , backgroundColor:'black', opacity: "0.8" , height: "15rem" , margin: "2rem" }}>
+      <Card.Body>
+        <Card.Title></Card.Title>
+        <Card.Text>
+      <CircularProgressWithLabel value={progress3} />
+        </Card.Text>
+      </Card.Body>
+    </Card>
+    <Card className='d-flex flex-row justify-content-center align-items-center'
+     style={{ width: '15rem' , backgroundColor:'black', opacity: "0.8" , height: "15rem" , margin: "2rem" }}>
+      <Card.Body>
+        <Card.Title></Card.Title>
+        <Card.Text>
+      <CircularProgressWithLabel value={progress4} />
+        </Card.Text>
+      </Card.Body>
+    </Card>
+    </Container>
   )
 }
