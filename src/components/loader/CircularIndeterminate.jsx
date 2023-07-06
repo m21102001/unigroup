@@ -74,21 +74,23 @@
 // }
 
 
-import * as React from 'react';
+import { useState,useEffect } from 'react';
 import PropTypes from 'prop-types';
 import CircularProgress from '@mui/material/CircularProgress';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 
 
 function CircularProgressWithLabel(props) {
   return (
     <Box sx={{ position: 'relative', display: 'inline-flex' }}>
-      <CircularProgress style={{color:"green" , height:"8rem" ,width:"8rem"}}
-       variant="determinate" {...props} />
+        <CircularProgress style={{color:"green" , height:"8rem" ,width:"8rem"}}
+        variant="determinate" {...props} />
       <Box
         sx={{
           top: 0,
@@ -120,51 +122,41 @@ CircularProgressWithLabel.propTypes = {
 };
 
 export default function CircularStatic() {
-  const [progress1, setProgress1] = React.useState(0);
+  const [progress1, setProgress1] = useState(0);
+  const [progress2, setProgress2] = useState(0);
+  const [progress3, setProgress3] = useState(0);
+  const [progress4, setProgress4] = useState(0);
 
-  React.useEffect(() => {
-    const timer = setInterval(() => {
+
+  useEffect(() => {
+    const timer1 = setInterval(() => {
       setProgress1((prevProgress) => (prevProgress >= 25 ? 0 : prevProgress + 1));
     }, 100);
-    return () => {
-      clearInterval(timer);
-    };
-  }, []);
-  const [progress2, setProgress2] = React.useState(0);
-
-  React.useEffect(() => {
-    const timer = setInterval(() => {
+    const timer2 = setInterval(() => {
       setProgress2((prevProgress) => (prevProgress >= 50 ? 0 : prevProgress + 1));
     }, 100);
-    return () => {
-      clearInterval(timer);
-    };
-  }, []);
-  const [progress3, setProgress3] = React.useState(0);
-
-  React.useEffect(() => {
-    const timer = setInterval(() => {
+    const timer3 = setInterval(() => {
       setProgress3((prevProgress) => (prevProgress >= 75 ? 0 : prevProgress + 1));
     }, 100);
-    return () => {
-      clearInterval(timer);
-    };
-  }, []);
-  const [progress4, setProgress4] = React.useState(0);
-
-  React.useEffect(() => {
-    const timer = setInterval(() => {
+    const timer4 = setInterval(() => {
       setProgress4((prevProgress) => (prevProgress >= 100 ? 0 : prevProgress + 1));
     }, 100);
     return () => {
-      clearInterval(timer);
+      clearInterval(timer1);
+      clearInterval(timer2);
+      clearInterval(timer3);
+      clearInterval(timer4);
     };
   }, []);
 
+  
+
   return ( 
-    <Container className='d-flex flex-row justify-content-center align-items-center'>
-    <Card className='d-flex flex-row justify-content-center align-items-center'
-     style={{ width: '15rem', backgroundColor:'black', opacity: "0.8",height: "15rem"  , margin: "2rem" }}>
+    <Container className='d-grid m-3'>
+      <Row>
+        <Col>
+    <Card className=''
+     style={{ backgroundColor:'black', opacity: "0.8" }}>
       <Card.Body >
         <Card.Title></Card.Title>
         <Card.Text>
@@ -172,33 +164,42 @@ export default function CircularStatic() {
         </Card.Text>
       </Card.Body>
     </Card>
-    <Card className='d-flex flex-row justify-content-center align-items-center'
-     style={{ width: '15rem' , backgroundColor:'black', opacity: "0.8" , height: "15rem" , margin: "2rem" }}>
-      <Card.Body>
+    </Col>
+        <Col>
+    <Card className=''
+     style={{ backgroundColor:'black', opacity: "0.8" }}>
+      <Card.Body >
         <Card.Title></Card.Title>
         <Card.Text>
       <CircularProgressWithLabel value={progress2} />
         </Card.Text>
       </Card.Body>
     </Card>
-    <Card className='d-flex flex-row justify-content-center align-items-center'
-     style={{ width: '15rem' , backgroundColor:'black', opacity: "0.8" , height: "15rem" , margin: "2rem" }}>
-      <Card.Body>
+    </Col>
+        <Col>
+    <Card className=''
+     style={{ backgroundColor:'black', opacity: "0.8" }}>
+      <Card.Body >
         <Card.Title></Card.Title>
         <Card.Text>
       <CircularProgressWithLabel value={progress3} />
         </Card.Text>
       </Card.Body>
     </Card>
-    <Card className='d-flex flex-row justify-content-center align-items-center'
-     style={{ width: '15rem' , backgroundColor:'black', opacity: "0.8" , height: "15rem" , margin: "2rem" }}>
-      <Card.Body>
+    </Col>
+        <Col>
+    <Card className=''
+     style={{ backgroundColor:'black', opacity: "0.8" }}>
+      <Card.Body >
         <Card.Title></Card.Title>
         <Card.Text>
       <CircularProgressWithLabel value={progress4} />
         </Card.Text>
       </Card.Body>
     </Card>
+    </Col>
+    
+    </Row>
     </Container>
   )
 }
