@@ -54,8 +54,8 @@ button {
 
 }
 
-a button:hover{
-  color: #fff;
+li button:hover{
+  color: #fff !important;
   background-color: orangered;
 }
 .image{
