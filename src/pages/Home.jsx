@@ -6,7 +6,7 @@ import Footer from "../components/Footer"
 // import ToolbarBasicExample from "../components/ToolbarBasicExample"
 import Team from "../components/Team"
 import Header from "../components/Header";
-import Aboutus from "../components/Aboutus"
+import Aboutus from "../components/Aboutus";
 import Company from "../components/Company";
 
 
@@ -28,3 +28,4 @@ const Home = () => {
 }
 
 export default Home;
+

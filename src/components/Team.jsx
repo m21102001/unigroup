@@ -140,8 +140,8 @@ function Team() {
     </Row>
       </Container>
 
-        </div>
-      );
+    </div>
+  );
 }
 
 export default Team;

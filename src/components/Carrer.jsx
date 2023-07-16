@@ -55,7 +55,7 @@ function Carrer() {
           <div>Internship</div>
         </Button>
       </div>
-      <div className='content d-flex'>
+      <div className='content d-flex flex-row justify-content-center align-items-center flex-wrap align-content-center'>
         {jobs == true ? (
           <div className=" text-center">
             <div className="row">

@@ -7,7 +7,7 @@ const Services = () => {
       <h2 className="serivce pt-5">serivce</h2>
       <div className="container ps-5 text-start">
         <div className="row row-services align-items-start services-section">
-          <div className="col-6">
+          <div className="col-md-6">
             <h3 className="whatwedo text-start">WHAT WE DO</h3>
             <p className="Wearehere">We are here to help you develop yourself</p>
             <span className="loerm pt-5">Sed ut perspiciatis unde omnis iste natus error sit of the volum
@@ -19,7 +19,7 @@ const Services = () => {
               <Button variant="outlit" className="btn btn-orange btn-services">Start New Project</Button>
             </div>
           </div>
-          <div className="col-6">
+          <div className="col-md-6 pt-4">
             <div className="row">
               <img src={servicestools} alt="servicestools" />
               {/* <div className="col-6">col-8</div>
