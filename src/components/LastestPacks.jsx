@@ -9,6 +9,7 @@ const LastestPacks = () => {
 
     const url_api="https://fakestoreapi.com/products"
     const [images ,setImages]=useState([])
+    const [selectedCategory, setSelectedCategory] = useState("all");
     useEffect(()=>{
         axios.get(url_api)
         .then((res)=>{
@@ -18,6 +19,19 @@ const LastestPacks = () => {
             console.log(err)
         })
     })
+
+    const handleCategoryFilter = (category) => {
+      setSelectedCategory(category);
+    };
+
+    const filteredImages =
+    selectedCategory === "all"
+      ? images
+      : images.filter((image) => image.category === selectedCategory);
+
+    // for(let i=0 ; i<images.length;i++){
+    //    if(images[i].category=='mens clothing')
+    // }
   return (
 
     <div className="content">
@@ -29,34 +43,44 @@ const LastestPacks = () => {
       <div className="header">
         <ul>
           <li>
-            <a href="./all" className="all"> <button>All</button> </a>
+       <button  active onClick={() => handleCategoryFilter("all")}>All</button>
+
           </li>
           <li>
-       <a href="./marketing"> <button>Marketing</button></a>
+          <button onClick={() => handleCategoryFilter("men's clothing")}>
+                Marketing
+              </button>
           </li>
           <li>
           
-          <a href="./business"><button>Business</button></a>
+          <button onClick={() => handleCategoryFilter("jewelery")}>
+                Business
+              </button>
+
         
 
           </li>
           <li>
-           <a href="./development"><button>Development</button> </a>
+          <button onClick={() => handleCategoryFilter("electronics")}>
+                Development
+              </button>
           </li>
           <li>
-            <a href="./art"> <button>Art & Designe</button></a>
+          <button onClick={() => handleCategoryFilter("women's clothing")}>
+                Art & Design
+              </button>
+
           </li>
         </ul>
       </div>
       <div className="image">
-          {
-              images.map((data)=>{
-                  return (
-                      <div className="image-data" key={data.id}><img src={data.image} alt ="an error ocuure"/></div>
-                  )
-
-              })
-          }
+      {filteredImages.map((data) => {
+            return (
+              <div className="image-data" key={data.id}>
+                <img src={data.image} alt="an error occurred" />
+              </div>
+            );
+          })}
 
       </div>
 
