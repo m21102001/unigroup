@@ -8,8 +8,11 @@ function Employee(props) {
         <img src={Employee.image_url} className="card-img-top" alt="..." />
         <div className="card-body">
         <h5 className="card-title">{Employee.name}</h5>
-        <p className="card-text">{Employee.age}</p>
-        <p>job: {Employee.job}$</p>
+        <p className="card-text">{Employee.position}</p>
+        <p>{Employee.salary}$</p>
+        <img src={Employee.facebookLink} className="card-img-top" alt="..." />
+        <img src={Employee.githubLink} className="card-img-top" alt="..." />
+        
         </div>
     </div>
 </div>

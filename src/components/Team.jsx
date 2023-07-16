@@ -104,8 +104,8 @@ function Team() {
     </Card>
     <Card style={{ width: '15rem' , margin:"2rem" }}>
       <Card.Body>
-        <Card.Title>Mohamed Ali</Card.Title>
-        <Card.Text className='text'></Card.Text>
+        {/* <Card.Title>Mohamed Ali</Card.Title>
+        <Card.Text className='text'></Card.Text> */}
         <div className="row">
 
         {employees.map((employees) => {
