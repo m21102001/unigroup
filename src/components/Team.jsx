@@ -10,10 +10,26 @@ import team from "../assets/navbar/Team.png";
 import linkedin from "../assets/navbar/linkedin.png"
 import Github from "../assets/navbar/Github.png"
 import Behance from "../assets/navbar/Behance.png"
+// import { useEffect, useState } from 'react';
+// import axios from "axios";
 
 
 function Team() {
-    return (
+
+  // const [interns,setInterns] = useState([]);
+  // const api_url = "http://localhost:3000/jobs/showJobs";
+  // useEffect(() => {
+  //   axios.get(api_url)
+  //   .then((res) => {
+  //     console.log(setInterns(res.data));
+  //   })
+  //   .catch((err) => {
+  //     console.log(err);
+  //   })
+  // })
+  // const data=axios.get('http://localhost:3000/jobs/showJobs').then(res=>console.log(res.data))
+  
+  return (
         <div>
         <h1 className='heading'>Our Team</h1>
         <ButtonToolbar className='contant-center justify-content-center' aria-label="Toolbar with button groups">
