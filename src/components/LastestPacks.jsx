@@ -1,7 +1,7 @@
 import "./Lastest.css"
 // import ToolbarBasicExample from "./ToolbarBasicExample"
 // import department from "../assets/navbar/department.png"
-// import { Button, ButtonGroup } from "react-bootstrap"
+import { Button, ButtonGroup } from "react-bootstrap"
 import { useState,useEffect } from "react"
 
 import axios from "axios"
@@ -41,37 +41,39 @@ const LastestPacks = () => {
           <p>check our latest news project</p>
       </div>
       <div className="header">
+        <ButtonGroup>
         <ul>
           <li>
-       <button  active onClick={() => handleCategoryFilter("all")}>All</button>
+        <Button  className='buttonGroup btn-light' active onClick={() => handleCategoryFilter("all")}>All</Button>
 
           </li>
           <li>
-          <button onClick={() => handleCategoryFilter("men's clothing")}>
+          <Button className='buttonGroup btn-light' onClick={() => handleCategoryFilter("men's clothing")}>
                 Marketing
-              </button>
+              </Button>
           </li>
           <li>
           
-          <button onClick={() => handleCategoryFilter("jewelery")}>
+          <Button className='buttonGroup btn-light' onClick={() => handleCategoryFilter("jewelery")}>
                 Business
-              </button>
+              </Button>
 
         
 
           </li>
           <li>
-          <button onClick={() => handleCategoryFilter("electronics")}>
+          <Button className='buttonGroup btn-light' onClick={() => handleCategoryFilter("electronics")}>
                 Development
-              </button>
+              </Button>
           </li>
           <li>
-          <button onClick={() => handleCategoryFilter("women's clothing")}>
+          <Button className='buttonGroup btn-light' onClick={() => handleCategoryFilter("women's clothing")}>
                 Art & Design
-              </button>
+              </Button>
 
           </li>
         </ul>
+        </ButtonGroup>
       </div>
       <div className="image">
       {filteredImages.map((data) => {

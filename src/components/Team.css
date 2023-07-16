@@ -9,10 +9,15 @@ h1{
 img{
     margin-left: 1rem !important;
 }
-.buttonGroup{
+/* .buttonGroup{
     background-color: #ff4600;
     border: 1px solid orangered;
 }
 .btn.active{
     background-color: #ff4600;
+} */
+.buttonGroup:hover{
+    background-color: #ff4600 !important;
+    color: white !important;
+
 }
