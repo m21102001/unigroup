@@ -2,7 +2,7 @@ import NavScrollExample from "../components/NavScrollExample";
 // import background from "../assets/navbar/Background_img.png";
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import "./Header.css";
-
+import company from "../assets/navbar/companies.png"
 
 function Header() {
     return (
@@ -15,6 +15,7 @@ function Header() {
                     style={{fontSize: '12px', padding: '1px'}}/>
                 </button>
             </div>
+            {/* <img src={company} alt="sponser company" width={100}/> */}
 
         </div>
     )

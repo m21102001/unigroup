@@ -1,3 +1,4 @@
+
 h1{
     margin: 3rem  0rem !important;
 }
@@ -8,6 +9,10 @@ h1{
 img{
     margin-left: 1rem !important;
 }
-/* .row-team{
-    margin-left: 5rem !important;
-} */
+.buttonGroup{
+    background-color: #ff4600;
+    border: 1px solid orangered;
+}
+.btn.active{
+    background-color: #ff4600;
+}

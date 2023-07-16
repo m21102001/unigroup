@@ -1,9 +1,4 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-// import { Contact } from './components/Contact'
 import { Route, Routes } from "react-router";
-// const [loading, setLoading] = useState(true);
 import './App.css'
 import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
@@ -14,13 +9,13 @@ import { useState } from "react";
 import CircularIndeterminate from "./components/loader/CircularIndeterminate";
 
 function App() {
-  // const [count, setCount] = useState(0)
   const [loading ,setLoading] = useState(false)
   return (
     <div className="App">
       
       {loading?(
         <div>
+          loading...
         <CircularIndeterminate/>
       </div>
       ):(
